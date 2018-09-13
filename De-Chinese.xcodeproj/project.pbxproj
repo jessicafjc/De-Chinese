@@ -7,21 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0446517E214916B900D70FD6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0446517D214916B900D70FD6 /* MainViewController.swift */; };
 		049D1E1321475C0F00198A74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D1E1221475C0F00198A74 /* AppDelegate.swift */; };
-		049D1E1521475C0F00198A74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D1E1421475C0F00198A74 /* ViewController.swift */; };
 		049D1E1821475C0F00198A74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049D1E1621475C0F00198A74 /* Main.storyboard */; };
 		049D1E1A21475C1000198A74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049D1E1921475C1000198A74 /* Assets.xcassets */; };
 		049D1E1D21475C1000198A74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049D1E1B21475C1000198A74 /* LaunchScreen.storyboard */; };
+		049D1E2521475D8300198A74 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D1E2421475D8300198A74 /* HomeCollectionViewController.swift */; };
+		049D1E27214760C000198A74 /* ChineseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D1E26214760C000198A74 /* ChineseCollectionViewCell.swift */; };
+		049D1E2921479AFD00198A74 /* ChineseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D1E2821479AFD00198A74 /* ChineseModel.swift */; };
+		049D1E2C2148BD4B00198A74 /* BmobSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049D1E2B2148BD4A00198A74 /* BmobSDK.framework */; };
+		049D1E322148E05B00198A74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049D1E312148E05A00198A74 /* Foundation.framework */; };
+		049D1E342148E06F00198A74 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049D1E332148E06F00198A74 /* CoreLocation.framework */; };
+		049D1E372148E0A600198A74 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049D1E352148E0A500198A74 /* CoreGraphics.framework */; };
+		049D1E382148E0A600198A74 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049D1E362148E0A500198A74 /* Security.framework */; };
+		049D1E3A2148E0B800198A74 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049D1E392148E0B800198A74 /* MobileCoreServices.framework */; };
+		049D1E3C2148E0C400198A74 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049D1E3B2148E0C400198A74 /* CFNetwork.framework */; };
+		049D1E3E2148E0CD00198A74 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049D1E3D2148E0CD00198A74 /* CoreTelephony.framework */; };
+		049D1E402148E0D700198A74 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049D1E3F2148E0D600198A74 /* SystemConfiguration.framework */; };
+		049D1E422148E0DE00198A74 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049D1E412148E0DE00198A74 /* AVFoundation.framework */; };
+		049D1E442148E0E600198A74 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049D1E432148E0E600198A74 /* MediaPlayer.framework */; };
+		049D1E462148E0FF00198A74 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 049D1E452148E0FF00198A74 /* libz.1.2.5.tbd */; };
+		049D1E482148E11000198A74 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 049D1E472148E11000198A74 /* libicucore.tbd */; };
+		049D1E4A2148E11C00198A74 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 049D1E492148E11C00198A74 /* libsqlite3.tbd */; };
+		049D1E4C2148E12800198A74 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 049D1E4B2148E12800198A74 /* libc++.tbd */; };
+		049D1E4F2148E16400198A74 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049D1E4E2148E16300198A74 /* Photos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0446517D214916B900D70FD6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		049D1E0F21475C0F00198A74 /* De-Chinese.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "De-Chinese.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		049D1E1221475C0F00198A74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		049D1E1421475C0F00198A74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		049D1E1721475C0F00198A74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		049D1E1921475C1000198A74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		049D1E1C21475C1000198A74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		049D1E1E21475C1000198A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049D1E2421475D8300198A74 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
+		049D1E26214760C000198A74 /* ChineseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseCollectionViewCell.swift; sourceTree = "<group>"; };
+		049D1E2821479AFD00198A74 /* ChineseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseModel.swift; sourceTree = "<group>"; };
+		049D1E2B2148BD4A00198A74 /* BmobSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BmobSDK.framework; sourceTree = "<group>"; };
+		049D1E2D2148BD6E00198A74 /* De-Chinese-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "De-Chinese-Bridging-Header.h"; sourceTree = "<group>"; };
+		049D1E312148E05A00198A74 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		049D1E332148E06F00198A74 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		049D1E352148E0A500198A74 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		049D1E362148E0A500198A74 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		049D1E392148E0B800198A74 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		049D1E3B2148E0C400198A74 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		049D1E3D2148E0CD00198A74 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		049D1E3F2148E0D600198A74 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		049D1E412148E0DE00198A74 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		049D1E432148E0E600198A74 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		049D1E452148E0FF00198A74 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		049D1E472148E11000198A74 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		049D1E492148E11C00198A74 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		049D1E4B2148E12800198A74 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		049D1E4E2148E16300198A74 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +68,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049D1E4F2148E16400198A74 /* Photos.framework in Frameworks */,
+				049D1E4C2148E12800198A74 /* libc++.tbd in Frameworks */,
+				049D1E4A2148E11C00198A74 /* libsqlite3.tbd in Frameworks */,
+				049D1E482148E11000198A74 /* libicucore.tbd in Frameworks */,
+				049D1E462148E0FF00198A74 /* libz.1.2.5.tbd in Frameworks */,
+				049D1E442148E0E600198A74 /* MediaPlayer.framework in Frameworks */,
+				049D1E422148E0DE00198A74 /* AVFoundation.framework in Frameworks */,
+				049D1E402148E0D700198A74 /* SystemConfiguration.framework in Frameworks */,
+				049D1E3E2148E0CD00198A74 /* CoreTelephony.framework in Frameworks */,
+				049D1E3C2148E0C400198A74 /* CFNetwork.framework in Frameworks */,
+				049D1E3A2148E0B800198A74 /* MobileCoreServices.framework in Frameworks */,
+				049D1E372148E0A600198A74 /* CoreGraphics.framework in Frameworks */,
+				049D1E382148E0A600198A74 /* Security.framework in Frameworks */,
+				049D1E342148E06F00198A74 /* CoreLocation.framework in Frameworks */,
+				049D1E322148E05B00198A74 /* Foundation.framework in Frameworks */,
+				049D1E2C2148BD4B00198A74 /* BmobSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +95,7 @@
 			children = (
 				049D1E1121475C0F00198A74 /* De-Chinese */,
 				049D1E1021475C0F00198A74 /* Products */,
+				049D1E302148E05A00198A74 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +111,48 @@
 			isa = PBXGroup;
 			children = (
 				049D1E1221475C0F00198A74 /* AppDelegate.swift */,
-				049D1E1421475C0F00198A74 /* ViewController.swift */,
+				049D1E2A2148BD3700198A74 /* framework */,
+				049D1E2421475D8300198A74 /* HomeCollectionViewController.swift */,
+				0446517D214916B900D70FD6 /* MainViewController.swift */,
+				049D1E2821479AFD00198A74 /* ChineseModel.swift */,
+				049D1E26214760C000198A74 /* ChineseCollectionViewCell.swift */,
 				049D1E1621475C0F00198A74 /* Main.storyboard */,
 				049D1E1921475C1000198A74 /* Assets.xcassets */,
 				049D1E1B21475C1000198A74 /* LaunchScreen.storyboard */,
 				049D1E1E21475C1000198A74 /* Info.plist */,
 			);
 			path = "De-Chinese";
+			sourceTree = "<group>";
+		};
+		049D1E2A2148BD3700198A74 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				049D1E2B2148BD4A00198A74 /* BmobSDK.framework */,
+				049D1E2D2148BD6E00198A74 /* De-Chinese-Bridging-Header.h */,
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
+		049D1E302148E05A00198A74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				049D1E4E2148E16300198A74 /* Photos.framework */,
+				049D1E4B2148E12800198A74 /* libc++.tbd */,
+				049D1E492148E11C00198A74 /* libsqlite3.tbd */,
+				049D1E472148E11000198A74 /* libicucore.tbd */,
+				049D1E452148E0FF00198A74 /* libz.1.2.5.tbd */,
+				049D1E432148E0E600198A74 /* MediaPlayer.framework */,
+				049D1E412148E0DE00198A74 /* AVFoundation.framework */,
+				049D1E3F2148E0D600198A74 /* SystemConfiguration.framework */,
+				049D1E3D2148E0CD00198A74 /* CoreTelephony.framework */,
+				049D1E3B2148E0C400198A74 /* CFNetwork.framework */,
+				049D1E392148E0B800198A74 /* MobileCoreServices.framework */,
+				049D1E352148E0A500198A74 /* CoreGraphics.framework */,
+				049D1E362148E0A500198A74 /* Security.framework */,
+				049D1E332148E06F00198A74 /* CoreLocation.framework */,
+				049D1E312148E05A00198A74 /* Foundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +187,7 @@
 				TargetAttributes = {
 					049D1E0E21475C0F00198A74 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -135,8 +227,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				049D1E1521475C0F00198A74 /* ViewController.swift in Sources */,
+				049D1E2521475D8300198A74 /* HomeCollectionViewController.swift in Sources */,
+				049D1E2921479AFD00198A74 /* ChineseModel.swift in Sources */,
 				049D1E1321475C0F00198A74 /* AppDelegate.swift in Sources */,
+				049D1E27214760C000198A74 /* ChineseCollectionViewCell.swift in Sources */,
+				0446517E214916B900D70FD6 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +375,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HJ5UC65UUT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/De-Chinese/framework",
+				);
 				INFOPLIST_FILE = "De-Chinese/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -289,6 +389,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jiachenfu.com.De-Chinese";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "De-Chinese/framework/De-Chinese-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,8 +400,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HJ5UC65UUT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/De-Chinese/framework",
+				);
 				INFOPLIST_FILE = "De-Chinese/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +414,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jiachenfu.com.De-Chinese";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "De-Chinese/framework/De-Chinese-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

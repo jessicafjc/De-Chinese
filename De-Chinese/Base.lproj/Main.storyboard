@@ -1,24 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Xk-id-tOT">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Main View Controller-->
+        <scene sceneID="C6Y-Ht-0HG">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="6Xk-id-tOT" customClass="MainViewController" customModule="De_Chinese" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lST-qm-pG9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPB-Nb-US7">
+                                <rect key="frame" x="176" y="136" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="每日一字"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOk-Tf-mHu">
+                                <rect key="frame" x="176" y="324" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="汉字瀑布"/>
+                                <connections>
+                                    <segue destination="9Vk-fy-1Zn" kind="show" id="2VF-GA-Sal"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="feT-kk-bFQ"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oaz-PI-bEq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-881" y="33"/>
+        </scene>
+        <!--Home Collection View Controller-->
+        <scene sceneID="IQe-c8-Zvx">
+            <objects>
+                <viewController id="9Vk-fy-1Zn" customClass="HomeCollectionViewController" customModule="De_Chinese" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xsg-BG-scv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeBgImg" translatesAutoresizingMaskIntoConstraints="NO" id="mAg-Ny-b48">
+                                <rect key="frame" x="0.0" y="20" width="414" height="672"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gTo-5k-MoO">
+                                <rect key="frame" x="20" y="105" width="374" height="567"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="avy-nd-gHn">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="w29-Tt-LDO" customClass="ChineseCollectionViewCell" customModule="De_Chinese" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSZ-Fn-eKc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="47"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="lSZ-Fn-eKc" secondAttribute="bottom" id="01W-ms-9WT"/>
+                                            <constraint firstItem="lSZ-Fn-eKc" firstAttribute="leading" secondItem="w29-Tt-LDO" secondAttribute="leading" id="PpD-V9-RUt"/>
+                                            <constraint firstItem="lSZ-Fn-eKc" firstAttribute="top" secondItem="w29-Tt-LDO" secondAttribute="top" id="VoS-hr-H8l"/>
+                                            <constraint firstAttribute="trailing" secondItem="lSZ-Fn-eKc" secondAttribute="trailing" id="tpn-Rh-xly"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="chineseName" destination="lSZ-Fn-eKc" id="Zjx-nZ-era"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gho-JU-Lzg">
+                                <rect key="frame" x="0.0" y="20" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.032082159072160721" green="0.017483672127127647" blue="0.069736525416374207" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="ODc-6m-cJa"/>
+                                    <constraint firstAttribute="height" constant="60" id="hqi-lM-Tur"/>
+                                </constraints>
+                                <color key="tintColor" red="0.9152866005897522" green="0.24655312299728394" blue="0.20107686519622803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="返回">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    <color key="titleShadowColor" red="0.048327289521694183" green="0.075113944709300995" blue="0.13131803274154663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6Xk-id-tOT" kind="show" id="LSe-7J-Qad"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mAg-Ny-b48" firstAttribute="leading" secondItem="D8A-at-fDs" secondAttribute="leading" id="1Mw-qA-Xu6"/>
+                            <constraint firstItem="D8A-at-fDs" firstAttribute="bottom" secondItem="gTo-5k-MoO" secondAttribute="bottom" constant="20" id="4wX-8E-l7x"/>
+                            <constraint firstItem="D8A-at-fDs" firstAttribute="trailing" secondItem="gTo-5k-MoO" secondAttribute="trailing" constant="20" id="6v2-k6-yNv"/>
+                            <constraint firstItem="gho-JU-Lzg" firstAttribute="leading" secondItem="D8A-at-fDs" secondAttribute="leading" id="70R-Q1-x7b"/>
+                            <constraint firstItem="gTo-5k-MoO" firstAttribute="leading" secondItem="D8A-at-fDs" secondAttribute="leading" constant="20" id="Ch4-mA-Z9F"/>
+                            <constraint firstItem="D8A-at-fDs" firstAttribute="bottom" secondItem="mAg-Ny-b48" secondAttribute="bottom" id="HJ2-TP-kxS"/>
+                            <constraint firstItem="mAg-Ny-b48" firstAttribute="top" secondItem="D8A-at-fDs" secondAttribute="top" id="Lhv-es-LCB"/>
+                            <constraint firstItem="gho-JU-Lzg" firstAttribute="top" secondItem="D8A-at-fDs" secondAttribute="top" id="PYF-Co-vYU"/>
+                            <constraint firstItem="D8A-at-fDs" firstAttribute="trailing" secondItem="mAg-Ny-b48" secondAttribute="trailing" id="X6N-0l-qVx"/>
+                            <constraint firstItem="gTo-5k-MoO" firstAttribute="top" secondItem="D8A-at-fDs" secondAttribute="top" constant="85" id="rPK-Lp-jIr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="D8A-at-fDs"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="homeCollectionView" destination="gTo-5k-MoO" id="PPd-YP-ig4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PcI-Me-hxH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.637681159420293" y="32.608695652173914"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="HomeBgImg" width="750" height="1334"/>
+    </resources>
 </document>
